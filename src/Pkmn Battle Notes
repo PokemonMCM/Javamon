@@ -1,0 +1,43 @@
+Data is calculated by the PkmnArena, where it is sent to clients through PkmnArenaMove.
+PkmnArena takes PkmnPlayer's sent by clients and uses the methods built in to calculate things like damage dealt, damage taken, and stat modifiers
+The base damage and attacker's relevant stats are sent to the PkmnArena where it gets the defender's relevant stats, calculates damage, and sends the info to the defender
+All important info is stored on the PkmnArena. It's only sent to clients so they can decide their next move and see what happened.
+
+Clients send Properties with data on their Pokemon for each member of their party.
+Pkmn Properties format:
+Name : Pokemon's nickname
+Pkmn : What Pokemon it is
+CurrentHP : current HP
+MaxHP : max HP
+Status1 : non-volatile status
+Status2 : volatile status
+Status3 : battlefield status
+Type1 : first type
+Type2 : second type if applicable, otherwise "n/a"
+Ability1 : first ability
+Attack : attack stat
+SpAttack : special attack stat
+Defense : defense stat
+SpDefense : special defense stat
+Speed : speed stat
+Accuracy : accuracy stat
+Evasion : evasion stat
+Level : level
+Exp : current experience
+ExpGain: Rate of gain
+NextExp : exp needed to level up
+AttackMod : attack stat modifier
+SpAttackMod : special attack stat modifier
+DefenseMod : defense stat modifier
+SpDefenseMod : special defense stat modifier
+SpeedMod : speed stat modifier
+Weight : weight (relevant to moves)
+Happiness : happiness (relevant to moves)
+Nature : nature (relevant to moves and stat increases)
+IVAttack
+IVSpAttack:
+IVDefense:
+IVSpDefense:
+IVSpeed:
+HiddenPowerType:
+HeldItem:
